@@ -1,4 +1,9 @@
-# 2.1. Introdução ao JUnit
-O JUnit é um framework de testes unitários para o ecossistema do Java.
+# 2.2. Escrevendo o seu primeiro teste unitário
 
-[Guia para o usuário do JUnit](https://junit.org/junit5/docs/current/user-guide/)
+Para facilitar a criação de uma classe de testes podemos selecionar o nome da classe, pressionar `alt + enter` e selecionar Test, com isso será criada uma classe testes que terá o mesmo caminho relativo, que facilita a organização do projeto.
+
+Para validar um teste usamos a classe Assertions.
+
+Vale ressaltar que todos os testes devem ser anotados com a anotação `@Test`.
+
+Vide a classe SaudacaoUtilTest.
