@@ -1,5 +1,5 @@
-# 2.6. Asserções de Timeout
+# 2.7. Asserções agrupadas com AssertAll
 
-`Assertions.assertTimeout()` Não para o teste antes de ser completado caso dure mais do que o timeout
+Nós podemos agrupar asserções, para isso usamos o assertAll().
 
-`Assertions.assertTimeoutPreemptively()` Para o teste antes de ser completado caso dure mais do que o timeout
+A diferença entre fazer vários asserts separados e vários agrupados num assertAll é que no assertAll todos os testes são executados, já se forem separados, caso um falhe os demais não são executados.
