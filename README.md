@@ -1,3 +1,5 @@
-# 2.8. Executando do teste com Debug
+# 2.9. Desabilitando testes unitários
 
-Podemos debugar o código na execução dos testes.
+Podemos desabilitar os testes que quisermos, basta adicionar a anotação @Disabled e também podemos definir uma mensagem com o motivo da desativação.
+
+Não é recomendado desativar testes a não ser que seja necessário.
