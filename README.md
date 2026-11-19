@@ -1,3 +1,3 @@
-# 2.4. Asserções de Exceptions
+# 2.5. Asserções em listas
 
-Podemos fazer asserções em Exceptions, além disso podemos receber a exception após a asserção de seu tipo e validar a sua mensagem ou outro parâmetro.
+Podemos fazer também a iteração em listas ou collections.
