@@ -1,19 +1,26 @@
-# 2.10. Ignorando execução dos testes condicionalmente com Assumptions
+# 2.11. Executando testes via Maven
 
-Clicamos no menu de Run e vamos em edit configuration e adicionamos a vaŕiavel de ambiente ENV=PROD.
-Vale notar que adicionamos a váriavel de ambiente apenas ao `SimuladorEsperaTest`.
+Adicionamos o plugin para que possamos executar os testes pelo maven
+
+    <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+    </plugin>
+
+Podemos executar os testes com: `mvn test`
+
+Os testes também são executados quando usamos: `mvn clean package`
+
+Podemos fazer um clean package sem executar os testes novamente com: `mvn clean package -Dmaven.test.skip=true`
 
 ---
 
-Podemos desabilitar um teste com base na váriavel de ambiente destas duas formas:
+## Problemas com Encoding de caracteres
 
-`Assumptions.assumeTrue("PROD".equals(System.getenv("ENV")), () -> "Abortando teste: Não deve ser executado em PROD");`
+Caso o seu ambiente venha a apresentar problemas com encoding, adicione uma variável de ambiente com o nome e valor:
 
-Ou
+`JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8`
 
-`@EnabledIfEnvironmentVariable(named = "ENV", matches = "DEV")`
+Isso fará com que o Maven e o Java sejam forçados a usar o UTF-8 na hora da execução
 
----
-
-**Vale notar também que os testes apenas são ignorados quando executamos a classe de testes. Se executarmos um método ele será executado normalmente, isso também vale para a anotação @Disabled.**
-
+Obs.: Caso exista alguma configuração customizada de JAVA_TOOL_OPTIONS na sua IDE, como de memória, ela pode acabar conflitando com a variável de ambiente.
