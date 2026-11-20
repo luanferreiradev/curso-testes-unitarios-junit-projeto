@@ -1,3 +1,7 @@
-# 3.2. Alterando nome de exibição dos testes com @DisplayName
+# 3.3. Formatando nomes de testes com @DisplayNameGeneration
 
-Podemos alterar o nome de exibição dos testes com a anotação @DisplayName. Serve tanto para os métodos quanto para as classes.
+Podemos adicionar a seguinte anotação na classe de teste:
+
+`@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)`
+
+Porém, normalmente não realizamos a customização dos nomes desta forma.
