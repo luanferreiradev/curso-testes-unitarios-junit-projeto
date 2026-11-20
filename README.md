@@ -1,7 +1,22 @@
-# 3.3. Formatando nomes de testes com @DisplayNameGeneration
+# 3.4. Aplicando a nomenclatura do BDD para nomear métodos de teste
 
-Podemos adicionar a seguinte anotação na classe de teste:
+BBD significa Behavior Driven Development.
 
-`@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)`
+Vamos nomear de acordo com o seguinte padrão
 
-Porém, normalmente não realizamos a customização dos nomes desta forma.
+- Given
+- When
+- Then
+
+Traduzindo:
+
+- Dado
+- Quando
+- Então
+
+---
+
+Vide as classes:
+
+- `com.algaworks.junit.utilidade.SaudacaoUtilTest`
+- `com.algaworks.junit.utilidade.FiltroNumerosTest`

@@ -5,10 +5,6 @@ import java.util.List;
 
 public class FiltroNumeros {
 
-    private FiltroNumeros() {
-
-    }
-
     public static List<Integer> numerosPares(List<Integer> numeros) {
         return new ArrayList<>(numeros).stream().filter(numero -> numero % 2 == 0).toList();
     }
