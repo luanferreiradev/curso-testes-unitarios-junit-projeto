@@ -1,22 +1,5 @@
-# 3.4. Aplicando a nomenclatura do BDD para nomear métodos de teste
+# 3.5. Organizando classe de testes com sub-classes e @Nested
 
-BBD significa Behavior Driven Development.
+Podemos criar inner classes para agrupar testes. Basta em uma classe de testes criamos uma ou mais inner classes e as anotarmos com `@Nested`.
 
-Vamos nomear de acordo com o seguinte padrão
-
-- Given
-- When
-- Then
-
-Traduzindo:
-
-- Dado
-- Quando
-- Então
-
----
-
-Vide as classes:
-
-- `com.algaworks.junit.utilidade.SaudacaoUtilTest`
-- `com.algaworks.junit.utilidade.FiltroNumerosTest`
+Vide a classe `com.algaworks.junit.utilidade.ContaBancariaTest.java`.
