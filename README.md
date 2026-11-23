@@ -1,10 +1,7 @@
-# 3.6. Preparando o cenário de testes com @BeforeEach e @BeforeAll
+# 3.7. Um teste deve ter uma única asserção?
 
-Ao invés de fazer toda preparação para o teste dentro de cada método, podemos fazer essa preparação com as anotações:
+Um teste pode conter mais de uma asserção, porém, isso torna o entendimento dos testes mais complicado, então idealmenta devemos separa-los. 
 
-    @BeforeAll
-    @BeforeEach
-    @AfterAll
-    @AfterEach
+Deve-se notar também, que quando criamos um teste com várias asserções, se não utilizarmos o assertAll, caso uma asserção falhe, as demais não serão executadas.
 
-Vide a classe `com.algaworks.junit.blog.negocio.CalculadoraGanhosTest`
+Nesta aula separamos um teste por asserção, vide `com.algaworks.junit.blog.negocio.CalculadoraGanhosTest`
