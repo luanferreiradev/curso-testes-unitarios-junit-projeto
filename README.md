@@ -1,5 +1,10 @@
-# 3.5. Organizando classe de testes com sub-classes e @Nested
+# 3.6. Preparando o cenário de testes com @BeforeEach e @BeforeAll
 
-Podemos criar inner classes para agrupar testes. Basta em uma classe de testes criamos uma ou mais inner classes e as anotarmos com `@Nested`.
+Ao invés de fazer toda preparação para o teste dentro de cada método, podemos fazer essa preparação com as anotações:
 
-Vide a classe `com.algaworks.junit.utilidade.ContaBancariaTest.java`.
+    @BeforeAll
+    @BeforeEach
+    @AfterAll
+    @AfterEach
+
+Vide a classe `com.algaworks.junit.blog.negocio.CalculadoraGanhosTest`
