@@ -1,5 +1,3 @@
-# 3.8. Combinando @Nested e @BeforeEach com a nomenclatura do BDD
+# 3.9. Desafio - Implemente a lógica e testes de um carrinho de compras
 
-Nesta aula vamos combinar @Nested e @BeforeEach com a nomenclatura do BBD, isso nos dá mais flexibilidade nas separações dos testes, organização e nomenclatura.
-
-Vide a classe `com.algaworks.junit.utilidade.ContaBancariaBDDTest`
+Nesta aula o desafio é implementar a lógica e os testes da classe CarrinhoCompra.
