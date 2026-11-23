@@ -1,7 +1,5 @@
-# 3.7. Um teste deve ter uma única asserção?
+# 3.8. Combinando @Nested e @BeforeEach com a nomenclatura do BDD
 
-Um teste pode conter mais de uma asserção, porém, isso torna o entendimento dos testes mais complicado, então idealmenta devemos separa-los. 
+Nesta aula vamos combinar @Nested e @BeforeEach com a nomenclatura do BBD, isso nos dá mais flexibilidade nas separações dos testes, organização e nomenclatura.
 
-Deve-se notar também, que quando criamos um teste com várias asserções, se não utilizarmos o assertAll, caso uma asserção falhe, as demais não serão executadas.
-
-Nesta aula separamos um teste por asserção, vide `com.algaworks.junit.blog.negocio.CalculadoraGanhosTest`
+Vide a classe `com.algaworks.junit.utilidade.ContaBancariaBDDTest`
